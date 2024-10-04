@@ -33,9 +33,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <?php if (!empty($message)): ?>
     <p><?= $message ?></p>
-<?php endif; ?>
-
-<form action="create_libros.php" method="post">
+<?php else: ?>
+    <form action="create_libros.php" method="post">
     <label for="titulo">Titulo:</label>
     <input type="text" name="titulo" id="titulo" required>
     <br>
@@ -50,6 +49,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <br>
     <input type="submit" value="Añadir Libro">
 </form>
+<?php endif; ?>
+<button><a href="index_libros.php">Lista Libros</a></button>
+
 
 </body>
 </html>
