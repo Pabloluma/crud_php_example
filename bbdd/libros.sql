@@ -9,7 +9,7 @@ CREATE TABLE libros (
     stock INT NOT NULL
 );
 
-INSERT INTO libros (nombre, descripcion, precio, stock) VALUES
+INSERT INTO libros (titulo, descripcion, precio, stock) VALUES
 ('El niño del pijama de rayas', 'Libro comun', 5.99, 50),
 ('Seda', 'Jabón suavizante de rosas', 6.49, 40),
 ('La reina roja', 'Libro de thriller', 15.60, 100);
